@@ -27,7 +27,7 @@ const loadEnv = () => {
 loadEnv();
 
 // Verify environment variables
-const MONGODB_URI = "mongodb+srv://omudegol:omudegol@cluster0.bjke0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGODB_URI = process.env.MONGODB_URI;
 const PORT = process.env.PORT || 50051;
 
 if (!MONGODB_URI) {
